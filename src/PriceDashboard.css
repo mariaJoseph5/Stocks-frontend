@@ -1,0 +1,128 @@
+
+h1 {
+    font-weight: 700;
+    text-align: center;
+    padding: 16px;
+    border-bottom: 1px solid #333;
+    display: block;
+    color: lightsteelblue;
+
+    > * {
+        padding: 0 20px;
+    }
+}
+
+.price-change-wrapper svg {
+    transition: color 0.3s ease;
+}
+
+@media (max-width: 600px) {
+    .price-dashboard li {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+.price-dashboard {
+    max-width: 1200px;
+    margin: 20px auto;
+    background-color: #121212;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    color: lightyellow;
+    font-family: 'Roboto', sans-serif;
+}
+
+.price-dashboard .price-dashboard ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0 12px;
+}
+
+.price-dashboard ul.heading-wrapper li, .price-dashboard ul li {
+    text-align: left;
+    padding: 10px 0;
+}
+
+.price-dashboard ul.heading-wrapper {
+    font-weight: 600;
+    border-bottom: 2px solid #444;
+    flex-direction: row;
+    display: flex;
+    .name-heading{
+        flex-basis: 50%;
+    }
+    .price-heading{
+        flex-basis: 20%;
+    }
+}
+
+.price-dashboard ul li {
+    border-bottom: 1px solid #333;
+    align-items: center;
+    display: flex;
+    .icon-wrapper{
+        display: flex;
+        flex-basis: 10%;
+        flex-direction: column;
+        justify-content: flex-start;
+        :hover{
+            cursor: pointer;
+        }
+    }
+}
+
+.symbol-wrapper {
+    font-weight: 700;
+    display: flex;
+    flex-basis: 50%;
+}
+
+.price-wrapper {
+    font-variant-numeric: tabular-nums;
+    flex-basis: 20%;
+}
+
+.price-change-wrapper {
+    text-align: center;
+    flex-basis: 20%;
+    display: flex;
+}
+
+.price-change-up {
+    color: #4caf50;
+}
+
+.price-change-down {
+    color: #e53935;
+}
+
+.price-change-same {
+    color: #999;
+}
+
+button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+.no-data-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.search-wrapper{
+    display: flex;
+    justify-content: flex-end;
+    padding: 5px 20px;
+    input{
+        padding: 5px 30px;
+    }
+}
